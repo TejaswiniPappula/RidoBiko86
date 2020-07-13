@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title>Ridobiko.com</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="Bike.css">
+  </head>
+  <script type="text/javascript">
+    function show1(){
+      var check1 = document.showVehicle.Apache.value;
+      var text1 = document.getElementById("apache").outerHTML;
+      document.write(text1);
+    }
+    function show2(){
+      var check2 = document.showVehicle.Activa.value;
+      var text2 = document.getElementById("activa").outerHTML;
+      document.write(text2);
+    }
+    function show3(){
+      var check3 = document.showVehicle.Bajaj.value;
+       var text3 = document.getElementById("bajaj").outerHTML;
+      document.write(text3);
+    }
+    function show4(){
+      var check4 = document.showVehicle.Hero.value;
+       var text4 = document.getElementById("hero").outerHTML;
+      document.write(text4);
+    }
+  </script>
+  <body class="mainbody">
+<div class="maindiv">
+<div class="div1">
+   <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <img src="https://www.ridobiko.com/images/icon.png" class="icon">
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-sm-4">
+                  </div>
+                  <div class="col-sm-8">
+                  	  <div class="row">
+                  	  	<div class="col-sm-6">
+                  	  		<div class="row">
+                  	  			<div class="col-sm-5">
+                  	  				<span>Login</span>
+                  	  			</div>
+                  	  			<div class="col-sm-2">
+                  	  				<span>|</span>
+                  	  			</div>
+                  	  			<div class="col-sm-5">
+                  	  				<span>Register</span>
+                  	  			</div>
+                  	  		</div>
+                  	  	</div>
+                  	  	<div class="col-sm-2">
+                          <a href="https://www.facebook.com/ridobikoIN/" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="col-sm-2">
+                          <a href="https://twitter.com/ridobiko" class="fa fa-twitter"></a>
+                        </div>
+                        <div class="col-sm-2">
+                          <a href="https://www.linkedin.com/company-beta/13323970/" class="fa fa-linkedin"></a>
+                        </div>
+                  	  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="div2">
+  <center>
+  <b><i>Brand</i></b><br>
+</center>
+  <form name = "showVehicle">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name = "Apache" value = "Apache" onclick = "show1()">&nbsp;&nbsp;<b class="cb">Apache</b></input><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name="Activa" value="Activa" onclick = "show2()">&nbsp;&nbsp;<b class="cb">Activa</b></input><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name="Bajaj" value="Bajaj" onclick = "show3()">&nbsp;&nbsp;<b class="cb">Bajaj</b></input><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name="Hero" value="Hero" onclick = "show4()">&nbsp;&nbsp;<b class="cb">Hero</b></input>
+</form>
+</div>
+<div class="div3">
+  <form name = "showImage">
+  <div class="grid-container">
+  <div class="grid-item" id="hero">
+    <b><i>Classic 350 CC</i></b><br>
+    <img src="https://www.ridobiko.com/image/royal%20enfield/website/Classic%20350%20cc.png" class = "item"><br>
+    <span><b>Deposit:₹1000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><b>₹650/Day</b></span>
+  </div>
+  <div class="grid-item" id="apache">
+    <b><i>Apache RTR 160</i></b><br>
+    <img src="https://www.ridobiko.com/image/tvs/website/Apache%20RTR%20160.png" class = "item"><br>
+    <span><b>Deposit:₹1000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><b>₹1300/Day</b></span>
+  </div>
+  <div class="grid-item" id="bajaj">
+    <b><i>Avenger 220 Cruise</i></b><br>
+    <img src=" https://www.ridobiko.com/image/bajaj/website/Avenger%20220%20Cruise.png" class = "item"><br>
+    <span><b>Deposit:₹1000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><b>₹1500/Day</b></span>
+  </div>  
+  <div class="grid-item"id="activa">
+    <b><i>Activa</i></b><br>
+    <img src="https://www.ridobiko.com/image/honda/website/Activa.png" class = "item"><br>
+   <span><b>Deposit:₹1000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <span><b>₹400/Day</b></span>
+  </div>
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>

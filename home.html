@@ -1,0 +1,163 @@
+<html>
+<head>
+	<title>Ridobiko.com</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  </head>
+  <script type="text/javascript">
+	function search(){
+		var city = document.Rent.City.value;
+        var vehicle = document.Rent.Vehicle.value;
+        if(city == "Banglore" && vehicle == "Bike"){
+        	window.location = "bangloreBike.html";
+        }
+        if(city == "Banglore" && vehicle == "Car"){
+        	window.location = "bangloreCar.html";
+        }
+        if(city == "Chennai" && vehicle == "Bike"){
+        	window.location = "chennaiBike.html";
+        }
+        if(city == "Chennai" && vehicle == "Car"){
+        	window.location = "chennaiCar.html";
+        }
+        if(city == "Delhi" && vehicle == "Bike"){
+        	window.location = "delhiBike.html";
+        }
+        if(city == "Delhi" && vehicle == "Car"){
+        	window.location = "delhiCar.html";
+        }
+        if(city == "Hyderabad" && vehicle == "Bike"){
+        	window.location = "hyderabadBike.html";
+        }
+        if(city == "Hyderabad" && vehicle == "Car"){
+        	window.location = "hyderabadCar.html";
+        }
+        if(city == "Mumbai" && vehicle == "Bike"){
+        	window.location = "mumbaiBike.html";
+        }
+        if(city == "Mumbai" && vehicle == "Car"){
+        	window.location = "mumbaiCar.html";
+        }
+	}
+
+	function openLogin() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeLogin() {
+  document.getElementById("myForm1").style.display = "none";
+}
+function openRegister() {
+  document.getElementById("myForm2").style.display = "block";
+}
+
+function closeRegister() {
+  document.getElementById("myForm2").style.display = "none";
+}
+</script>
+  <body class="mainbody">
+<div class="maindiv">
+<div class="div1">
+   <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <img src="https://www.ridobiko.com/images/icon.png" class="icon">
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-sm-4">
+                  </div>
+                  <div class="col-sm-8">
+                  	  <div class="row">
+                  	  	<div class="col-sm-6">
+                  	  		<div class="row">
+                  	  			<div class="col-sm-5">
+                  	  				
+<button class="open-button" onclick="openLogin()">Login</button>
+
+<div class="form-popup" id="myForm1">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+  </form>
+</div>
+                  	  			</div>
+                  	  			<div class="col-sm-2">
+                  	  				<span>|</span>
+                  	  			</div>
+                  	  			<div class="col-sm-5">
+<button class="open-button" onclick="openRegister()">Register</button>
+
+<div class="form-popup" id="myForm2">
+  <form class="form-container">
+    <h1>Register</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Register</button>
+    <button type="button" class="btn cancel" onclick="closeRegister()">Close</button>
+  </form>
+</div>
+                  	  			</div>
+                  	  		</div>
+                  	  	</div>
+                  	  	<div class="col-sm-2">
+                  	  		<a href="https://www.facebook.com/ridobikoIN/" class="fa fa-facebook"></a>
+                  	  	</div>
+                  	  	<div class="col-sm-2">
+                  	  		<a href="https://twitter.com/ridobiko" class="fa fa-twitter"></a>
+                  	  	</div>
+                  	  	<div class="col-sm-2">
+                  	  		<a href="https://www.linkedin.com/company-beta/13323970/" class="fa fa-linkedin"></a>
+                  	  	</div>
+                  	  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="div2">
+<center>
+<form name = "Rent">
+	<select name = "City">
+		<option>Select the City</option>
+		<option>Banglore</option>
+		<option>Chennai</option>
+		<option>Delhi</option>
+		<option>Hyderabad</option>
+		<option>Mumbai</option>
+	</select>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<select name = "Vehicle">
+		<option>Select Type</option>
+		<option>Bike</option>
+		<option>Car</option>
+	</select>
+	<br><br>
+	<input type="button" value = "Search" onclick = "search()" class = "search"/>
+</form>
+</center>
+</div>
+</div>
+</body>
+</html>

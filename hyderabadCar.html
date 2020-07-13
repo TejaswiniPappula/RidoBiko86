@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title>Ridobiko.com</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="Bike.css">
+  </head>
+  <script type="text/javascript">
+    function show1(){
+      var check1 = document.showVehicle.Maruti.value;
+      var text1 = document.getElementById("maruti").outerHTML;
+      document.write(text1);
+    }
+    function show2(){
+      var check2 = document.showVehicle.Mahindra.value;
+      var text2 = document.getElementById("mahindra").outerHTML;
+      document.write(text2);
+    }
+    function show3(){
+      var check3 = document.showVehicle.Tata.value;
+       var text3 = document.getElementById("tata").outerHTML;
+      document.write(text3);
+    }
+    function show4(){
+      var check4 = document.showVehicle.Ford.value;
+       var text4 = document.getElementById("ford").outerHTML;
+      document.write(text4);
+    }
+  </script>
+  <body class="mainbody">
+<div class="maindiv">
+<div class="div1">
+   <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <img src="https://www.ridobiko.com/images/icon.png" class="icon">
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-sm-4">
+                  </div>
+                  <div class="col-sm-8">
+                  	  <div class="row">
+                  	  	<div class="col-sm-6">
+                  	  		<div class="row">
+                  	  			<div class="col-sm-5">
+                  	  				<span>Login</span>
+                  	  			</div>
+                  	  			<div class="col-sm-2">
+                  	  				<span>|</span>
+                  	  			</div>
+                  	  			<div class="col-sm-5">
+                  	  				<span>Register</span>
+                  	  			</div>
+                  	  		</div>
+                  	  	</div>
+                  	  	<div class="col-sm-2">
+                          <a href="https://www.facebook.com/ridobikoIN/" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="col-sm-2">
+                          <a href="https://twitter.com/ridobiko" class="fa fa-twitter"></a>
+                        </div>
+                        <div class="col-sm-2">
+                          <a href="https://www.linkedin.com/company-beta/13323970/" class="fa fa-linkedin"></a>
+                        </div>
+                  	  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="div2">
+  <center>
+  <b><i>Brand</i></b><br>
+</center>
+  <form name = "showVehicle">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name = "Maruti" value = "Maruti" onclick = "show1()">&nbsp;&nbsp;<b class="cb">Maruti</b></input><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name="Mahindra" value="Mahindra" onclick = "show2()">&nbsp;&nbsp;<b class="cb">Mahindra</b></input><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name="Tata" value="Tata" onclick = "show3()">&nbsp;&nbsp;<b class="cb">Tata</b></input><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name="Ford" value="Ford" onclick = "show4()">&nbsp;&nbsp;<b class="cb">Ford</b></input>
+</form>
+</div>
+<div class="div3">
+  <form name = "showImage">
+  <div class="grid-container">
+  <div class="grid-item" id="maruti">
+    <b><i>Maruti Swift</i></b><br>
+    <img src="https://imgctcf.aeplcdn.com/thumbs/p-nc-b-ver45/images/car-data/big/maruti-suzuki-swift-default.jpg" class = "item"><br>
+    <span><b>Deposit:₹5000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><b>₹1650/Day</b></span>
+  </div>
+  <div class="grid-item" id="mahindra">
+    <b><i>Mahindra Scorpio</i></b><br>
+    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202004/Mahindra_Scorpio_BS6_Napoli_Bl-770x433.jpeg?D7_WVrJoTf3mjdFyPtbq_dCIAq1Hiwcp" class = "item"><br>
+    <span><b>Deposit:₹5000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><b>₹2300/Day</b></span>
+  </div>
+  <div class="grid-item" id="tata">
+    <b><i>Tata Nexon AT</i></b><br>
+    <img src=" https://images.carandbike.com/car-images/colors/tata/nexon/tata-nexon-tectonic-blue.png?v=1579759344" class = "item"><br>
+    <span><b>Deposit:₹5000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span><b>₹2500/Day</b></span>
+  </div>  
+  <div class="grid-item"id="ford">
+    <b><i>Ford Figo</i></b><br>
+    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Ford/Ford-Figo-2015-2019/4617/1561007564888/front-left-side-47.jpg" class = "item"><br>
+   <span><b>Deposit:₹5000</b></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <span><b>₹3400/Day</b></span>
+  </div>
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>
